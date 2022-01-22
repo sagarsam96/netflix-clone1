@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX | HOME </title>
+   <style>
+       *{
+     box-sizing: border-box;
+     padding: 0px;
+     color: white;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+
+ body{
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+     text-align: center;
+     flex-wrap: wrap;
+ }
+
+ .page1{
+     display: flex;
+     flex-direction: column;
+     border-bottom: 5px solid gray;
+     height: 780px;
+     width: 100%;
+     background-image: url(1.jpg);
+ }
+
+ .page1_1{
+     display: flex;
+     justify-content: space-between; 
+     margin: 1%;
+     padding: 1% 2%;
+ }
+
+ .logo{
+     width: 14%;
+ }
+
+ .page1_2{
+     
+     margin: 10%;
+     text-align: center;
+     font-size:x-large;
+     }
+
+ h1, h3, h5{
+     font-weight: 700;
+ }
+ 
+ #get, #get1{
+     background-color: red;
+     border: none;
+     border-radius: 2px;
+     padding: 7px;
+     font-weight: 500;
+ }
+
+ select{
+     border-radius: 2px;
+     border: 1px solid white;
+     padding: 7px;
+     margin: 5px;
+     font-weight: 500;
+     background-color: black;
+     color: white;   
+ }
+
+ #email{
+     border-radius: 2px;
+     border: none;
+     padding: 7px 30% 7px 1%;
+     margin: -7px;
+     color: black;
+ }
+
+ /* ---------------------------------------- page 2---------------------- */
+ 
+ .page2{
+     display: flex;
+     flex-direction:column;
+     flex-wrap: wrap;
+     text-align: center;
+     margin: 1%;
+     border-bottom: 2px solid gray;
+     justify-items: center;
+     align-items: center;
+ }
+
+ .page2 img{
+     width: 50%;   
+     align-self: center;
+     z-index: 1;
+ }
+
+ 
+
+ .box2{
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-self: center;
+ }
+
+ #lust{
+     background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png);
+     width: 35%;
+     align-self: center;
+     position: relative;
+     top: -186px;
+     
+ }
+
+ /* ---------------page3----------------- */
+
+ .page3{
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-content: center;
+     flex-wrap: wrap;
+     text-align: left;
+     margin-bottom: 1%;
+     border-bottom: 2px solid gray;
+     padding: 1%;
+     
+     }
+
+ .page3 img{
+     max-width: 80%;
+     margin-bottom: 5%;
+     margin-top: 5%;
+     padding: 3%;
+ }
+
+/* ---------------------page 4---------------------- */
+
+.page4{
+     display: flex;
+     flex-direction: row-reverse;
+     flex-wrap: wrap;
+     text-align: center;
+     justify-content: center;
+     border-bottom: 2px solid gray;
+     
+ }
+ .media_page4{
+     height: 500px;
+ }
+
+ .media_page4 video{
+     position: relative;
+     top: -450px;
+     z-index: -1;
+     width:53%;
+ }
+
+/* -----------------------------page 5 --------------------- */
+
+.page5{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-content: center;
+     flex-wrap: wrap;
+     text-align: center;
+     margin-bottom: 3%;
+     border-bottom: 2px solid gray;
+     padding: 1%;
+ }
+
+ /* ---------------------------------- */
+ 
+ .page6{
+     margin-bottom: 3%;
+     border-bottom: 2px solid gray;
+     padding: 6%;
+     min-height: 400px;   
+     
+ }
+
+ .box{
+     background-color: rgba(238, 225, 225, 0.418);
+     border: 2px solid black;
+     padding: 1%;
+     text-align:  left;
+     box-sizing: border-box;
+     margin-left: 20%;
+     margin-right: 20%;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .plus{
+     margin-right: 1%;
+ }
+
+ .plus:hover{
+
+     background: brown;
+
+ }
+
+ .under_box{
+     margin: 1%;
+     padding: 1%;
+ }
+ 
+ /* ---------------------------------------------- */
+
+ .page7{
+     padding: 2%;
+     min-height: 240px;  
+ }
+
+ .page7{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .lastpage1, .lastpage2, .lastpage3{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     margin-left: 20%;
+     margin-right: 20%;
+     margin-top: 10%;
+ }
+
+ footer{
+     text-align: left;
+     margin-left: 7%;
+ }
+   </style>
+
+</head>
+<body>
+    <section class="page1">
+        <div class="page1_1">
+            <img src="logo.png" alt="netflix logo" class="logo">
+            <div class="box1">
+                <select name="lang" id="lang">
+                    <option value="english">English</option>
+                    <option value="hindi">hindi</option>
+                </select>
+                <input type="submit" value="Sign In" id="get1">
+            </div>
+        </div>
+        <div class="page1_2">
+            <div class="text">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h3>Watch anywhere. Cancel anytime.</h3>
+                <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+                <div class="text_in">
+                    <input  type="email" name="email" id="email" placeholder="Email address">
+                    <input type="submit" value="Get Started >" id="get">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page2">
+        <div class="box22">
+        <h1>Enjoy on your TV.</h1>
+        <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+        </div>
+        
+        <div class="box2">
+            <img src="tv.png" alt="page2 photo">
+        <video src="1.m4v" id="lust" controls autoplay loop></video>
+        </div>
+        </section>
+    
+    <section class="page3">
+        
+        <img src="3.jpg" alt="stranger things">
+        
+        <div class="text_page3">
+            <h1>Download your shows to watch offline.</h1>
+            <h3>Save your favourites easily and always have something to watch.</h3>
+        </div>
+       
+    </section>
+
+    <section class="page4">
+        <div class="text_page4">
+            <h1>Watch everywhere.</h1>
+            <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+        </div>
+        <div class="media_page4">
+        <img src="4.png" alt="sardar ji">
+        <video src="2.m4v" controls loop autoplay></video>
+        </div>
+        </section>
+
+    <section class="page5">
+        <div class="text_page5">
+        <h1>Create profiles for children.</h1>
+        <h3>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
+        </div>
+        <div class="media_page5">
+            <img src="2.jpg" alt="children">
+        </div>
+        
+    </section>
+    <section class="page6">
+        <p style="font-weight:bolder;">Frequently Asked Questions</p>
+        
+        <div class="box_box">
+        <div class="box">What is netflix? <div class="plus">+</div> </div>
+        <div class="box">How much does netlfix cost?<div class="plus">+</div></div>
+        <div class="box">Where can i watch?<div class="plus">+</div></div>
+        <div class="box">How do i cancel<div class="plus">+</div></div>
+        <div class="box">what can i watch on netflix?<div class="plus">+</div></div>
+        <div class="box">Is netflix good for kids?<div class="plus">+</div></div>
+        </div>
+        
+        <div class="under_box">
+            <p>Ready to watch? enter your email to create or restart your membership.</p>
+            <div class="text_in">
+                <input type="email" name="email" id="email" placeholder="Email address">
+                <input type="submit" value="Get Started >" id="get">
+            </div> 
+        </div>
+    </section>
+    
+    <span>Questions? 
+        <a href="#">Call 000-800-040-1843</a> </span>
+       
+    <section class="page7">
+        
+         <div class="lastpage1">
+            <a href="#">FAQ</a>
+            <a href="#">Media Center</a>
+            <a href="#">Ways yo Watch</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Speed Test</a>
+        </div>
+        
+        <div class="lastpage2">
+            <a href="#">Help Centre</a>
+            <a href="#">Investors Relations</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Legal Notices</a>
+        
+        </div>
+        
+        <div class="lastpage3">
+            <a href="#">Account</a>
+            <a href="#">Jobs</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+    </section>
+
+    <footer>
+        Netflix India
+    </footer>
+
+</body>
+</html> 

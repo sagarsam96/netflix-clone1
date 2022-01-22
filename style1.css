@@ -1,0 +1,231 @@
+*{
+     box-sizing: border-box;
+     padding: 0px;
+     color: white;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+
+ body{
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+     text-align: center;
+     flex-wrap: wrap;
+ }
+
+ .page1{
+     display: flex;
+     flex-direction: column;
+     border-bottom: 5px solid gray;
+     height: 780px;
+     width: 100%;
+     background-image: url(1.jpg);
+ }
+
+ .page1_1{
+     display: flex;
+     justify-content: space-between; 
+     margin: 1%;
+     padding: 1% 2%;
+ }
+
+ .logo{
+     width: 14%;
+ }
+
+ .page1_2{
+     
+     margin: 10%;
+     text-align: center;
+     font-size:x-large;
+     }
+
+ h1, h3, h5{
+     font-weight: 700;
+ }
+ 
+ #get, #get1{
+     background-color: red;
+     border: none;
+     border-radius: 2px;
+     padding: 7px;
+     font-weight: 500;
+ }
+
+ select{
+     border-radius: 2px;
+     border: 1px solid white;
+     padding: 7px;
+     margin: 5px;
+     font-weight: 500;
+     background-color: black;
+     color: white;   
+ }
+
+ #email{
+     border-radius: 2px;
+     border: none;
+     padding: 7px 30% 7px 1%;
+     margin: -7px;
+     color: black;
+ }
+
+ /* ---------------------------------------- page 2---------------------- */
+ 
+ .page2{
+     display: flex;
+     flex-direction:column;
+     flex-wrap: wrap;
+     text-align: center;
+     margin: 1%;
+     border-bottom: 2px solid gray;
+     justify-items: center;
+     align-items: center;
+ }
+
+ .page2 img{
+     width: 50%;   
+     align-self: center;
+     z-index: 1;
+ }
+
+ 
+
+ .box2{
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-self: center;
+ }
+
+ #lust{
+     background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png);
+     width: 35%;
+     align-self: center;
+     position: relative;
+     top: -186px;
+     
+ }
+
+ /* ---------------page3----------------- */
+
+ .page3{
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-content: center;
+     flex-wrap: wrap;
+     text-align: left;
+     margin-bottom: 1%;
+     border-bottom: 2px solid gray;
+     padding: 1%;
+     
+     }
+
+ .page3 img{
+     max-width: 80%;
+     margin-bottom: 5%;
+     margin-top: 5%;
+     padding: 3%;
+ }
+
+/* ---------------------page 4---------------------- */
+
+.page4{
+     display: flex;
+     flex-direction: row-reverse;
+     flex-wrap: wrap;
+     text-align: center;
+     justify-content: center;
+     border-bottom: 2px solid gray;
+     
+ }
+ .media_page4{
+     height: 500px;
+ }
+
+ .media_page4 video{
+     position: relative;
+     top: -450px;
+     z-index: -1;
+     width:53%;
+ }
+
+/* -----------------------------page 5 --------------------- */
+
+.page5{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-content: center;
+     flex-wrap: wrap;
+     text-align: center;
+     margin-bottom: 3%;
+     border-bottom: 2px solid gray;
+     padding: 1%;
+ }
+
+ /* ---------------------------------- */
+ 
+ .page6{
+     margin-bottom: 3%;
+     border-bottom: 2px solid gray;
+     padding: 6%;
+     min-height: 400px;   
+     
+ }
+
+ .box{
+     background-color: rgba(238, 225, 225, 0.418);
+     border: 2px solid black;
+     padding: 1%;
+     text-align:  left;
+     box-sizing: border-box;
+     margin-left: 20%;
+     margin-right: 20%;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .plus{
+     margin-right: 1%;
+ }
+
+ .plus:hover{
+
+     background: brown;
+
+ }
+
+ .under_box{
+     margin: 1%;
+     padding: 1%;
+ }
+ 
+ /* ---------------------------------------------- */
+
+ .page7{
+     padding: 2%;
+     min-height: 240px;  
+ }
+
+ .page7{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .lastpage1, .lastpage2, .lastpage3{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     margin-left: 20%;
+     margin-right: 20%;
+     margin-top: 10%;
+ }
+
+ footer{
+     text-align: left;
+     margin-left: 7%;
+ }
